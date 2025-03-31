@@ -1,0 +1,45 @@
+.widget {
+  min-width: 280px;
+  min-height: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.widget_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.widget_body {
+  min-height: 500px; /* Adjust based on layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers text if few/no comments */
+}
+
+
+.widget_options li {
+  list-style: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.widget_options li:last-child {
+  border-bottom: none;
+}
+
+.widget_options h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.widget_options p {
+  font-size: 12px;
+  color: gray;
+}

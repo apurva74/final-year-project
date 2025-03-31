@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "name":"Remote",
+        "title":"remote data object",
+        "image": "car.png"
+    },
+    
+    {
+        "id":2,
+        "name":"Remote",
+        "title":"remote data object",
+        "image": "car.png"
+    },
+    {
+        "id":3,
+        "name":"Banking and Finance",
+        "title":"remote data object",
+        "image": "car.png"
+
+    },
+    {
+        "id":4,
+        "name":"Remote",
+        "title":"remote data object",
+         "image": "car.png"
+        
+    },
+    {
+        "id":5,
+        "name":"Remote",
+        "title":"remote data object",
+         "image": "car.png"
+        
+    },
+    {
+        "id":6,
+        "name":"Banking & Finance",
+        "title":"remote data object",
+         "image": "car.png"
+        
+    },
+    {
+        "id":7,
+        "name":"Data Scientists",
+        "title":"remote data object",
+         "image": "car.png"
+        
+    }
+]

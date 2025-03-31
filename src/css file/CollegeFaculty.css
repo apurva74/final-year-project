@@ -1,0 +1,56 @@
+.faculty-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-logo img {
+  max-height: 60px;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  background: #f3f3f3;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.header-search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-right .header_options {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.header-right .header_options:hover {
+  color: #0073b1;
+}

@@ -1,0 +1,322 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #0a1d37, #ffffff);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 217, 0, 0.1) 0%, rgba(10, 29, 55, 0.9) 100%);
+  z-index: 1;
+}
+
+.login-title {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffd700; /* Gold */
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.9); /* Light cream background */
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  z-index: 2;
+}
+
+.form input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #000; /* Black text while typing */
+  transition: border-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9); /* Ensure light background for better contrast */
+}
+
+.form input:focus {
+  border-color: #ffd700;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+  color: #000; /* Black text when focused */
+  background-color: #fff; /* Bright background while focused */
+}
+
+
+.form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #0a1d37; /* Dark Blue */
+  color: #ffd700;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form button:hover {
+  background-color: #ffd700;
+  color: #0a1d37;
+  transform: translateY(-2px);
+}
+
+.message {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.message a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}
+
+.login-with-google-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #db4437;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.login-with-google-btn:hover {
+  background-color: #c3362b;
+}
+.dropdown {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 2px solid #ffd700; /* Gold border */
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.85); /* Soft cream background */
+  color: #0a1d37; /* Dark blue text */
+  font-size: 16px;
+  font-family: 'Fredoka', sans-serif;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.dropdown:hover {
+  background-color: rgba(255, 215, 0, 0.1); /* Light gold highlight on hover */
+  border-color: #ffa500; /* Brighter gold border */
+}
+
+.dropdown:focus {
+  border-color: #ffa500; /* Bright gold on focus */
+  outline: none;
+  box-shadow: 0 0 12px rgba(255, 165, 0, 0.7); /* Gold glow effect */
+}
+
+.dropdown option {
+  background-color: #ffffff; /* White for options */
+  color: #0a1d37; /* Dark blue text for visibility */
+  font-family: 'Fredoka', sans-serif;
+  font-size: 16px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-column {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 15px; /* Reduced padding */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 900px;
+  z-index: 2;
+  overflow: hidden; /* Ensures it doesn't overflow the container */
+}
+
+/* form1 means styling of login main form design */
+
+.login-title1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffd700;
+  text-align: center;
+  margin: 40px 0 20px; /* Increased top margin to push it down */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .login-title1 {
+    margin-top: 60px; /* Extra margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-title1 {
+    margin-top: 80px; /* Even more margin for very small screens */
+  }
+}
+
+.form1{
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 15px; /* Reduced padding */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  z-index: 2;
+  overflow: hidden; /* Ensures it doesn't overflow the container */
+}
+.form1 input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #000; /* Black text while typing */
+  transition: border-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9); /* Ensure light background for better contrast */
+}
+
+.form1 input:focus {
+  border-color: #ffd700;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+  color: #000; /* Black text when focused */
+  background-color: #fff; /* Bright background while focused */
+}
+
+
+.form1 button {
+  width: 100%;
+  padding: 14px;
+  background-color: #0a1d37; /* Dark Blue */
+  color: #ffd700;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form1 button:hover {
+  background-color: #ffd700;
+  color: #0a1d37;
+  transform: translateY(-2px);
+}
+/* login page styling end */
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Slightly reduced gap */
+}
+
+.form-column {
+  flex: 1;
+  min-width: 48%;
+  padding: 15px; /* Reduced padding */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: rgba(249, 249, 249, 0.9);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  height: auto; /* Adjust to content size */
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-column {
+    min-width: 100%; /* Full width on smaller screens */
+  }
+}
+input,
+textarea {
+  color: black; /* Ensures text color is black */
+  background-color: white; /* Optional: ensures the background stays white */
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888; /* Placeholder color */
+}
+
+textarea {
+  resize: none; /* Prevents resizing if unnecessary */
+}
+
